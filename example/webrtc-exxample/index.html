@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebRTC 채팅 예제</title>
+  <style>
+    textarea, input { width: 100%; margin-top: 5px; }
+    #chat { height: 200px; }
+  </style>
+</head>
+<body>
+  <h2>WebRTC 채팅</h2>
+
+  <button id="createBtn">Create Offer</button>
+  <button id="answerBtn">Create Answer</button>
+  <button id="setAnswerBtn">Set Remote Answer</button>
+
+  <h3>채팅</h3>
+  <textarea id="chat" readonly></textarea><br>
+  <input id="messageInput" type="text" placeholder="메시지 입력 후 Enter" />
+
+  <h3>Offer / Answer 복사</h3>
+  <textarea id="offer" placeholder="Offer or Answer" rows="6"></textarea>
+
+  <script src="main.js"></script>
+</body>
+</html>
